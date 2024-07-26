@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <div class="logo-text">Aditya Narayanan S</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="home" class="hero-header">
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="/images/profile.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Aditya</h1>
+                    <p>Hi, I'm Aditya Narayanan S, a passionate Web Developer and Software Engineer based in Tamil Nadu, India. With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating engaging and interactive user experiences. I hold a Bachelor's degree in Computer Science and Engineering from SASTRA Deemed University, where I honed my skills in both front-end and back-end development.</p>
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1dwSXeSjM_C2h5udMrUAlJJgZJVh_foFb/view?usp=sharing" class="btn active">Download CV</a>
+                        <a href="mailto:adityanarayanan343@gmail.com" class="btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My journey in the world of technology has been fueled by a deep interest in Machine Learning and CyberSecurity. I've had the privilege of working as a Full Stack Developer Intern at Neyveli Lignite Corporation India Ltd., where I developed a web application for filing machinery complaints using HTML, CSS, JavaScript, PHP, and MySQL. This experience solidified my understanding of server-side programming and database management.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Notable Projects</h2>
+            <div class="project">
+                <h3>FarMarket</h3>
+                <p>A decentralized marketplace for farmers built using React, Node, Solidity, HardHat, and Ether.js. In this project, I focused on the front-end development and contributed to significantly improving the application's performance.</p>
+            </div>
+            <div class="project">
+                <h3>Automatic Weed Detection and Classification</h3>
+                <p>Utilized Python, TensorFlow, and Pandas to develop a system optimized for precision agriculture. The system achieved an impressive accuracy of 92.2%, demonstrating my ability to implement complex machine learning models.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <h3>Languages:</h3>
+                <p>C/C++, Python, JavaScript, SQL, HTML, CSS</p>
+                <h3>Frameworks:</h3>
+                <p>Express, Bootstrap, Tailwind CSS</p>
+                <h3>Developer Tools:</h3>
+                <p>Git, GitHub</p>
+                <h3>Libraries:</h3>
+                <p>jQuery, ReactJS</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Socials</h2>
+            <div class="social">
+                <a href="https://www.facebook.com/alphaTHElord"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/aditya-narayanan-s-8b2a8026b/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/xoaditya0x/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:adityanarayanan343@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/adityanarayanan343"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["Frontend Developer", "Web Developer", "Software Engineer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>
